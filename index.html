@@ -76,6 +76,7 @@
             justify-content: center;
             gap: 40px;
             margin-top: 30px;
+            flex-wrap: wrap; /* Make sure it wraps on smaller screens */
         }
 
         .game-card {
@@ -86,6 +87,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
             transition: all 0.3s ease;
             width: 300px;
+            margin: 10px;
         }
 
         .game-logo img {
@@ -174,6 +176,7 @@
     <section class="games" id="flstudio">
         <h2>Featured Software</h2>
         <div class="game-cards">
+            <!-- FL Studio 24 Card -->
             <div class="game-card">
                 <div class="game-logo">
                     <img src="https://i.ibb.co/6c54DLj6/png-clipart-fl-studio-digital-audio-workstation-line-ableton-live-others-miscellaneous-natural-foods.png" alt="FL Studio 24 Logo">
@@ -182,24 +185,19 @@
                 <p>File size: 1.15 GB</p>
                 <a href="https://www.mediafire.com/file/qcptthxxcqhr6d6/FL_Studio_Producer_Edition_24.2.1_Build_4526_All_Plugins_Edition_REV1.rar/file" class="download-btn">Download</a>
             </div>
+
+            <!-- Nexus 2 Card -->
+            <div class="game-card">
+                <div class="game-logo">
+                    <img src="https://i.ibb.co/dwr5rBCn/bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8-removebg-preview.png" alt="Nexus 2 Logo">
+                </div>
+                <h3>Nexus 2</h3>
+                <p>The ultimate synth for rich, professional sound design.</p> <!-- Updated short description -->
+                <p class="file-size">File Size: 18.1GB</p>
+                <a href="https://g-meh.com/library/windows/nexus2" class="download-btn">Download Now</a>
+            </div>
         </div>
     </section>
-    <!-- Featured Software Section -->
-<div class="games">
-    <h2>Featured Software</h2>
-    <div class="game-cards">
-        <!-- Existing Game Cards here -->
-
-        <!-- New Game Card: Nexus 2 -->
-        <div class="game-card">
-            <img src="https://i.ibb.co/dwr5rBCn/bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8-removebg-preview.png" alt="Nexus 2 Logo">
-            <h3>Nexus 2</h3>
-            <p>Advanced file management and system optimization tool.</p>
-            <p class="file-size">File Size: 18.1GB</p>
-            <a href="https://g-meh.com/library/windows/nexus2" class="download-btn">Download Now</a>
-        </div>
-    </div>
-</div>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -213,7 +211,6 @@
     <footer class="footer">
         <p>&copy; 2025 Terranta Studio | All rights reserved</p>
     </footer>
-
 </body>
 
 </html>
