@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Press Start 2P', sans-serif;
+    font-family: 'Press Start 2P', sans-serif; /* Ensures all text uses the pixel font */
     margin: 0;
     padding: 0;
     background-color: #111;
@@ -62,7 +62,7 @@ body {
 /* Featured Software Section */
 .games {
     padding: 60px 20px;
-    background-color: #222;
+    background-color: #000; /* Black background for the software section */
     text-align: center;
 }
 
