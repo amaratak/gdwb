@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('https://i.pinimg.com/736x/f0/11/31/f011312e7ca5035b1fd0534beba2920d.jpg') no-repeat center center/cover;
+    background: url('https://i.pinimg.com/originals/90/9b/cc/909bcc27328649235d1b9f051a0aadd9.jpg') no-repeat center center/cover;
     background-size: cover; /* Ensures background covers entire viewport */
     color: #fff;
     overflow-x: hidden;
@@ -67,7 +67,7 @@ header .logo h1 {
 
 /* Hero Section */
 .hero {
-    background: url('https://i.pinimg.com/736x/f0/11/31/f011312e7ca5035b1fd0534beba2920d.jpg') no-repeat center center/cover;
+    background: url('https://i.pinimg.com/originals/90/9b/cc/909bcc27328649235d1b9f051a0aadd9.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -87,13 +87,13 @@ header .logo h1 {
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    text-shadow: 0 0 15px rgba(0, 0, 255, 0.6); /* Less bright glow */
 }
 
 .hero p {
     font-size: 1.3em;
     margin-bottom: 30px;
-    text-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.4); /* Less bright glow */
 }
 
 .cta-btn {
@@ -112,7 +112,7 @@ header .logo h1 {
     background-color: #fff;
     color: #00f;
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Less bright glow */
 }
 
 /* Games Section */
