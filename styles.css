@@ -1,3 +1,13 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
+}
+
 /* Navigation */
 header {
     position: fixed;
@@ -127,13 +137,17 @@ header .logo h1 {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
+    max-width: 300px; /* Control max width */
+    margin: 0 auto;
 }
 
-.game-card img {
-    width: 100%;
-    height: auto;
+.game-logo img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    float: left;  /* Make logo float to the left */
+    margin-right: 10px;
 }
 
 .game-card h3 {
@@ -149,17 +163,22 @@ header .logo h1 {
     margin: 10px 0;
 }
 
-.game-card a {
-    display: inline-block;
-    margin-top: 15px;
+.download-btn {
     background-color: #00f;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
-    border-radius: 25px;
     font-weight: bold;
+    border-radius: 25px;
+    font-size: 1.1em;
     letter-spacing: 1px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #fff;
+    color: #00f;
+    transform: scale(1.05);
 }
 
 .game-card:hover {
