@@ -123,6 +123,13 @@ body {
     transform: scale(1.05);
 }
 
+/* New class for file size in the game card */
+.game-card p.file-size {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 10px;
+}
+
 /* About Section */
 .about {
     background-color: #111;
