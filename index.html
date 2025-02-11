@@ -7,23 +7,160 @@
     <title>Terranta Studio - Music Production</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            background: url('https://awesomewallpapersblog.com/wp-content/uploads/2014/01/4916-blurred-city-street-1920x1080-world-wallpaper.jpg') no-repeat center center/cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .cta-btn {
+            background-color: #ff33cc; /* Neon pink */
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .cta-btn:hover {
+            background-color: #ff66cc; /* Lighter neon pink */
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+        }
+
+        /* Featured Software Section */
+        .games {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .game-cards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .game-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            width: 300px;
+        }
+
+        .game-logo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .game-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #ff33cc; /* Neon pink */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .game-card p {
+            color: #ccc;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #ff33cc; /* Neon pink */
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .download-btn:hover {
+            background-color: #ff66cc; /* Lighter neon pink */
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+        }
+
+        /* About Section */
+        .about {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff33cc; /* Neon pink */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .about-text p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 30px;
+            color: #fff;
+        }
+
+        .footer p {
+            font-size: 1em;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header class="header">
-        <div class="logo">
-            <h1>Terranta Studio</h1>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#flstudio">Software</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
