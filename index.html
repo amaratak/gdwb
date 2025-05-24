@@ -8,24 +8,22 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Join WaveCraft Minecraft Server</h1>
-    <p>Copy the address below and jump into the adventure!</p>
-    <button class="copy-btn" id="copyBtn">list-josh.gl.joinmc.link</button>
-    <div class="copy-msg" id="copyMsg">Copied to clipboard!</div>
-  </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>WaveCraft</h2>
+      <a href="minecraft://connect/list-josh.gl.joinmc.link" class="cta-btn" id="ipBtn">list-josh.gl.joinmc.link</a>
+    </div>
+  </section>
 
   <script>
-    const copyBtn = document.getElementById('copyBtn');
-    const copyMsg = document.getElementById('copyMsg');
-
-    copyBtn.addEventListener('click', () => {
-      const text = copyBtn.textContent.trim();
+    const ipBtn = document.getElementById('ipBtn');
+    ipBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const text = ipBtn.textContent.trim();
       navigator.clipboard.writeText(text).then(() => {
-        copyMsg.classList.add('visible');
-        setTimeout(() => copyMsg.classList.remove('visible'), 2000);
+        alert('Copied to clipboard: ' + text);
       }).catch(() => {
-        alert('Failed to copy. Please copy manually: ' + text);
+        alert('Please copy manually: ' + text);
       });
     });
   </script>
