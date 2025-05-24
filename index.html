@@ -1,223 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terranta</title>
-
-    <!-- Favicon for the website tab -->
-    <link rel="icon" href="https://i.ibb.co/bjx9tCGY/favbicon.jpg" type="image/jpeg">
-
-    <!-- This is for embends -->
-    <meta property="og:title" content="Terranta">
-    <meta property="og:description" content="Providing audio software for the community to use." />
-    <meta property="og:image" content="https://i.ibb.co/ZRSZwZpm/terrantaban.jpg">
-    <meta property="og:url" content="https://amaratak.github.io/gdwb"> <!-- Replace with your actual website URL -->
-    <meta property="og:type" content="website">
-
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Press Start 2P', cursive;
-            margin: 0;
-            padding: 0;
-            background: url('https://awesomewallpapersblog.com/wp-content/uploads/2014/01/4916-blurred-city-street-1920x1080-world-wallpaper.jpg') no-repeat center center/cover;
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            background: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
-        }
-
-        .hero-content {
-            z-index: 2;
-        }
-
-        .hero h2 {
-            font-size: 3em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 30px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-
-        .cta-btn {
-            background-color: #ff33cc; /* Neon pink */
-            padding: 15px 30px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            font-size: 1.2em;
-            letter-spacing: 2px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-        }
-
-        .cta-btn:hover {
-            background-color: #ff66cc; /* Lighter neon pink */
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
-        }
-
-        /* Featured Software Section */
-        .games {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .game-cards {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .game-card {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
-            width: 300px;
-        }
-
-        .game-logo img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .game-card h3 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            color: #ff33cc; /* Neon pink */
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-        }
-
-        .game-card p {
-            color: #ccc;
-            font-size: 1em;
-            margin: 10px 0;
-        }
-
-        .download-btn {
-            display: inline-block;
-            background-color: #ff33cc; /* Neon pink */
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: transform 0.3s ease;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-        }
-
-        .download-btn:hover {
-            background-color: #ff66cc; /* Lighter neon pink */
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
-        }
-
-        /* About Section */
-        .about {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .about-text h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #ff33cc; /* Neon pink */
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-        }
-
-        .about-text p {
-            font-size: 1.2em;
-            color: #ccc;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            text-align: center;
-            padding: 30px;
-            color: #fff;
-        }
-
-        .footer p {
-            font-size: 1em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WaveCraft Minecraft Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h2>Unleash Your Creativity</h2>
-            <p>Transform your music production with cutting-edge software.</p>
-            <a href="#flstudio" class="cta-btn">Explore Software</a>
-        </div>
-    </section>
+  <div class="container">
+    <h1>Join WaveCraft Minecraft Server</h1>
+    <p>Copy the address below and jump into the adventure!</p>
+    <button class="copy-btn" id="copyBtn">list-josh.gl.joinmc.link</button>
+    <div class="copy-msg" id="copyMsg">Copied to clipboard!</div>
+  </div>
 
-    <!-- Featured Software Section -->
-    <section class="games" id="flstudio">
-        <h2>Featured Software</h2>
-        <div class="game-cards">
-            <div class="game-card">
-                <div class="game-logo">
-                    <img src="https://i.ibb.co/6c54DLj6/png-clipart-fl-studio-digital-audio-workstation-line-ableton-live-others-miscellaneous-natural-foods.png" alt="FL Studio 24 Logo">
-                </div>
-                <h3>FL Studio 24</h3>
-                <p>File size: 1.15 GB</p>
-                <a href="https://amaratak.github.io/key/#" class="download-btn">Download</a>
-            </div>
+  <script>
+    const copyBtn = document.getElementById('copyBtn');
+    const copyMsg = document.getElementById('copyMsg');
 
-            <!-- New Game Card: Nexus 2 -->
-            <div class="game-card">
-                <img src="https://media-hosting.imagekit.io//f794f3c5ac764596/bg_f8f8f8-flat_750x_075_f-pad_750x1000_f8f8f8__1_-removebg-preview.png?Expires=1834023775&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=DDGUXTWJNFheTMzvhBxa0MFtoCsRBI9QoLGuCO7wB44XYIeEpHTsMgLeozSnahO8zlL9rZVDelYih1MXSN0VUBMhW4ZyAR0Q4bd~~aeH4yM3PGCzgz-~WXHmj576vpirh19bZQT~ZgLytAG9VLYYnt95t0b1sqJQhslJeH0UHowUbwIBzMFddRwfAk9VzSfcVtRUM4Uy7zZ26k8YqJfMyhCfLmwMDWrmTGScVZnlwoG93gMRxiPe3NL7MvGkTQPFPBySwnmje8cIn2O4XVTdqAGsE6wyXP3XY4IUWwpJk0QDSfieeRwEKx3O9-Y8YaytCWCeBFA9XFyLML6E6FViTw__" alt="Nexus 2 Logo">
-                <h3>Nexus 2</h3>
-                <p>-</p>
-                <p class="file-size">File size: 18.1GB</p>
-                <a href="https://g-meh.com/library/windows/nexus2" class="download-btn">Download</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-text">
-            <h2>About Terranta Studio</h2>
-            <p>At Terranta, we specialize in providing the best music production tools for artists and creators. From intuitive digital audio workstations to world-class plugins, our goal is to help you create your best music.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Terranta Studio | All rights reserved</p>
-    </footer>
-
+    copyBtn.addEventListener('click', () => {
+      const text = copyBtn.textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        copyMsg.classList.add('visible');
+        setTimeout(() => copyMsg.classList.remove('visible'), 2000);
+      }).catch(() => {
+        alert('Failed to copy. Please copy manually: ' + text);
+      });
+    });
+  </script>
 </body>
-
 </html>
