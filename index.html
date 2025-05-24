@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WaveCraft Minecraft Server</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wavecraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <section class="hero">
-    <div class="hero-content">
-      <h2>WaveCraft</h2>
-      <a href="minecraft://connect/list-josh.gl.joinmc.link" class="cta-btn" id="ipBtn">list-josh.gl.joinmc.link</a>
-    </div>
-  </section>
-
-  <script>
-    const ipBtn = document.getElementById('ipBtn');
-    ipBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const text = ipBtn.textContent.trim();
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Copied to clipboard: ' + text);
-      }).catch(() => {
-        alert('Please copy manually: ' + text);
-      });
-    });
-  </script>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Join Wavecraft Server</h2>
+            <a href="minecraft://connect/list-josh.gl.joinmc.link" class="cta-btn">Connect Now</a>
+        </div>
+    </section>
 </body>
 </html>
